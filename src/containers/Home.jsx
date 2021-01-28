@@ -5,6 +5,7 @@ import Categories from '../views/Categories';
 import Carousel from '../views/Carousel';
 import CarouselItem from '../views/CarouselItem';
 import useInitialState from '../hooks/useInitialState';
+import Header from '../views/Header';
 
 
 // const API = 'http://localhost:3000/initalState';
@@ -15,6 +16,7 @@ const Home = ({myList, trends, originals}) =>{
     // return initialState.length===0 ? <h1>loading...</h1> :()
     return(
         <>
+            <Header/>
             <Search/>
             {
                 myList?.length > 0 && 
